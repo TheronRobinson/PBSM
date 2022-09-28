@@ -21,13 +21,16 @@ const styles = StyleSheet.create({
 		display: "flex",
 		marginTop: "15%",
 		width: "90%",
-		height: "48%",
+		height: "55%",
 		backgroundColor: "#f5f5f5",
 		borderRadius: 20,
 	},
 	titleContainer: {
+		display: "flex",
 		paddingTop: "5%",
 		paddingLeft: "2%",
+		width: "68%",
+		height: "30%",
 	},
 	professionsSearch: {
 		marginTop: "5%",
@@ -64,7 +67,7 @@ const styles = StyleSheet.create({
 		marginLeft: 8,
 	},
 	homeTitle: {
-		fontSize: 30,
+		fontSize: 40,
 		fontWeight: "bold",
 	},
 	mentorshipText: {
@@ -99,11 +102,10 @@ const styles = StyleSheet.create({
 	buttonStyling: {
 		alignItems: "center",
 		justifyContent: "center",
-		width: "35%",
+		width: "30%",
 		paddingVertical: 12,
 		paddingHorizontal: 32,
 		borderRadius: 50,
-		elevation: 3,
 		backgroundColor: "#0504aa",
 	},
 	activeBrothersContainer: {
@@ -136,15 +138,24 @@ export default function App() {
 			<View style={styles.searchParentContainer}>
 				<View style={styles.titleContainer}>
 					<Text style={styles.homeTitle}>What are you {"\n"} looking for?</Text>
+					<View
+						style={{
+							display: "block",
+							left: "100%",
+							height: "90%",
+							width: "50%",
+							bottom: "80%",
+						}}
+					>
+						<SvgXml
+							xml={pbsShieldXml}
+							width="100%"
+							height="100%"
+							display="block"
+						/>
+					</View>
 				</View>
-				<View style={{}}>
-					<SvgXml
-						xml={pbsShieldXml}
-						width="55%"
-						height="55%"
-						style={{ position: "relative", left: "55%", bottom: "30%" }}
-					/>
-				</View>
+
 				<View style={styles.professionsSearch}>
 					<Text style={styles.professionsText}>Add your profession(s)</Text>
 				</View>
@@ -162,10 +173,10 @@ export default function App() {
 					<View style={styles.personalContainer}></View>
 				</View>
 				<View
-					style={{ display: "flex", alignItems: "center", marginTop: "12%" }}
+					style={{ display: "flex", alignItems: "center", marginTop: "8%" }}
 				>
 					<Pressable style={styles.buttonStyling}>
-						<Text style={{ fontSize: 16, fontWeight: "bold", color: "white" }}>
+						<Text style={{ fontSize: 12, fontWeight: "bold", color: "white" }}>
 							Search
 						</Text>
 					</Pressable>
