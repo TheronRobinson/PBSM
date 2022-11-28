@@ -203,12 +203,12 @@ export default function App() {
 				>
 					<View style={styles.activeBrothersContainer}>
 						<Text style={{ textAlign: "center", marginTop: "50%" }}>
-							John Lee
+							Bro. John Lee
 						</Text>
 					</View>
 					<View style={styles.activeBrothersContainer}>
 						<Text style={{ textAlign: "center", marginTop: "50%" }}>
-							Theron Robinson
+							Bro. Theron Robinson
 						</Text>
 					</View>
 				</View>
